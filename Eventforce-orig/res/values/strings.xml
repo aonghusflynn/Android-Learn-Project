@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Eventforce</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="niceimage">Nice image</string>
+    <string name="title_activity_detail">Detail</string>
+    <string name="jsonUrl">http://localhost/eventforce/events.json</string>
+
+</resources>
