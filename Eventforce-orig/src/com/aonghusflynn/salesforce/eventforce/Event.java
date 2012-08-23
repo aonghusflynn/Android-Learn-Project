@@ -1,5 +1,7 @@
 package com.aonghusflynn.salesforce.eventforce;
 
+import java.util.List;
+
 /* TODO 
  * Following the example on
  * http://www.ibm.com/developerworks/xml/library/x-dataAndroid/#l7
@@ -15,7 +17,7 @@ public class Event {
 	private final String id = "";
 	private final double lat = 0.0;
 	private final double longitude = 0.0;
-
+	static List events ;
 	
 
 	public Event(String title, String description, String lat,

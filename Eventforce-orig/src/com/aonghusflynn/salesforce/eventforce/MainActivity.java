@@ -12,11 +12,11 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import android.app.ListActivity;
 import android.content.Intent;
 import android.database.MatrixCursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -24,7 +24,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
-public class MainActivity extends ListActivity {
+public class MainActivity extends HeadlinesFragment   {
 	public MatrixCursor eventCursor;
 	public final static String EVENT_TITLE = "com.aonghusflynn.salesforce.eventforce.EVENT_TITLE";
 	public final static String EVENT_DESCRIPTION = "com.aonghusflynn.salesforce.eventforce.EVENT_DESCRIPTION";
