@@ -12,6 +12,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+
+
 import android.content.Intent;
 import android.database.MatrixCursor;
 import android.os.AsyncTask;
@@ -24,7 +26,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
-public class MainActivity extends HeadlinesFragment   {
+public class MainActivity extends HeadlinesFragment implements HeadlinesFragment.OnHeadlineSelectedListener {
 	public MatrixCursor eventCursor;
 	public final static String EVENT_TITLE = "com.aonghusflynn.salesforce.eventforce.EVENT_TITLE";
 	public final static String EVENT_DESCRIPTION = "com.aonghusflynn.salesforce.eventforce.EVENT_DESCRIPTION";
@@ -132,6 +134,11 @@ public class MainActivity extends HeadlinesFragment   {
 			}
 			return eventCursor;
 		}
+	}
+
+	public void onArticleSelected(int position) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
