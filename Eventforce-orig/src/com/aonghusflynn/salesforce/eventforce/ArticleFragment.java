@@ -15,14 +15,14 @@
  */
 package com.aonghusflynn.salesforce.eventforce;
 
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class ArticleFragment extends Fragment {
+public class ArticleFragment extends ListFragment {
     final static String ARG_POSITION = "position";
     int mCurrentPosition = -1;
 
@@ -61,7 +61,8 @@ public class ArticleFragment extends Fragment {
 
     public void updateArticleView(int position) {
         TextView article = (TextView) getActivity().findViewById(R.id.article);
-       // article.setText(Ipsum.Articles[position]);
+        //article.setText(Event.events.getItem(position));
+        setListAdapter(Event.events);
         mCurrentPosition = position;
     }
 

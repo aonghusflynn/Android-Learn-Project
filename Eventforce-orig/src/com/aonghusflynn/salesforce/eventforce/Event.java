@@ -1,6 +1,6 @@
 package com.aonghusflynn.salesforce.eventforce;
 
-import java.util.List;
+import android.widget.ListAdapter;
 
 /* TODO 
  * Following the example on
@@ -17,7 +17,7 @@ public class Event {
 	private final String id = "";
 	private final double lat = 0.0;
 	private final double longitude = 0.0;
-	static List events ;
+	static ListAdapter events ;
 	
 
 	public Event(String title, String description, String lat,

@@ -41,7 +41,8 @@ public class HeadlinesFragment extends ListFragment {
                 android.R.layout.simple_list_item_activated_1 : android.R.layout.simple_list_item_1;
 
         // Create an array adapter for the list view, using the Ipsum headlines array
-        setListAdapter(new ArrayAdapter<String>(getActivity(), layout, Event.events));
+        //setListAdapter(new ArrayAdapter<String>(getActivity(), layout, Event.events));
+        setListAdapter(Event.events);
     }
 
     @Override
